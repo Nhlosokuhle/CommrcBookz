@@ -1,14 +1,14 @@
-# PersonaCheck
+# CommercBookz
 
 ## Overview
 
-This project is a machine learning–powered web application that classifies a user as Introverted or Extroverted based on their responses to a structured questionnaire. The application demonstrates an end-to-end ML pipeline, from data generation and model training to deployment as a web service.
+This project is a machine learning web application that evaluates whether second-hand accounting textbooks are fairly priced, underpriced, or overpriced. Unlike many academic projects, this application is built on real-world data collected manually, making it highly practical and market-oriented.
 
-The primary goal of this project is to showcase applied machine learning integrated into a production-style web application.
+The application demonstrates how data science can be used to support informed decision-making in student marketplaces.
 
 ## Problem Statement
 
-Personality traits are often assessed using structured questionnaires. This project explores how such responses can be mapped to personality categories using supervised machine learning and served through a user-facing application.
+Students often struggle to determine whether second-hand textbooks are priced fairly. This project addresses that gap by analysing historical second-hand book listings and using machine learning to classify pricing fairness.
 
 ## Application Architecture
 
@@ -20,16 +20,16 @@ Frontend: HTML/CSS forms for user input
 
 Prediction Flow:
 
-- User answers questionnaire
+- User enters book details
 
-- Inputs sent to Flask backend
+- Backend processes features
 
-- Model generates prediction
+- Model predicts pricing category
 
-- Result returned and displayed to user
+- Result displayed with clear interpretation
 
 ## Usage
-You should be able to access the project by navigating to https://personacheck-myzz.onrender.com/ in your web browser.
+You should be able to access the project by navigating to https://commrc-bookz.vercel.app/ in your web browser.
 
 ## Author(s)
 Nhlosokuhle Bandile Khoza
