@@ -29,7 +29,7 @@ Prediction Flow:
 - Result returned and displayed to user
 
 ## Usage
-After following the installation instructions, you should be able to access the project by navigating to http://localhost:80 in your web browser. From there, you can create the account and access the notes page.
+You should be able to access the project by navigating to https://personacheck-myzz.onrender.com/ in your web browser.
 
 ## Author(s)
 Nhlosokuhle Bandile Khoza
