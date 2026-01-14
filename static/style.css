@@ -1,0 +1,116 @@
+body {
+    background: #e8e8e8;
+    height: 100dvh;
+}
+
+.form-area {
+    padding-top: 5%;
+}
+
+.row single-form {
+    box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+    background: #fff;
+}
+
+.left {
+    background: teal;
+    padding: 200px 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    justify-self: flex-start;
+}
+
+.left h2 {
+    font-family: poppins;
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.left h2 span{
+    font-weight: 100;
+}
+
+.right {
+    padding: 70px 100px;
+    position: relative;
+}
+
+.right i {
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: #fff;
+}
+
+.right button {
+    border: 2px solid #000;
+    border-radius: 0;
+    background: #252525;
+    width: 180px;
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.right button:hover{
+    background: #fff;
+    color: #252525;
+}
+
+select {
+    border: 0;
+    border-bottom: 1px solid teal;
+}
+
+.form-control {
+    border: 0;
+    border-bottom: 10px solid teal;
+}
+
+p {
+    background-color: teal;
+    padding: 0.3rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .right i{
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
+}
+
+@media (max-width: 768px){
+    .left{
+        padding: 90px 15px;
+        text-align: center;
+    }
+    .left h2 {
+        font-size: 25px;
+    }
+    .right {
+        padding: 25px;
+    }
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 45%;
+    }
+    .right button{
+        width: 150px;
+        padding: 12px 0;
+    }
+}

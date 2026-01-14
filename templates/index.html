@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>COMMERCBOOKZ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="form-area">
+        <div class="container">
+            <div class="row single-form g-0">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="left">
+                        <h2><span>CommrcBookz</span></h2>
+                        <p class="copyright">Created by Nhlosokuhle Khoza. © 2026</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="right">
+                        <i class="fa fa-caret-left"></i>
+                        <form method="POST" action="/predict">
+                            <div class="mb-3">
+                                <label for="book_title" class="form-label">Book Title</label>
+                                <select name="book_title" required>
+                                    <option value="Accounting Information Systems">Accounting Information Systems</option>
+                                    <option value="Commercial Law - Fresh Perspectives">Commercial Law - Fresh Perspectives</option>
+                                    <option value="Economics Volume 1: Global and Southern African Perspectives">
+                                        Economics Volume 1: Global and Southern African Perspectives
+                                    </option>
+                                    <option value="Financial Accounting: An introduction">Financial Accounting: An introduction</option>
+                                    <option value="Financial Accounting: The Question Book">Financial Accounting: The Question Book</option>
+                                    <option value="Managerial Finance">Managerial Finance</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="book_condition" class="form-label">Book condition</label>
+                                <select name="quality" required>
+                                    <option value="Acceptable">Acceptable</option>
+                                    <option value="Average">Average</option>
+                                    <option value="Excellent">Excellent</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="book_edition" id="book_edition" placeholder="Enter the edition of the book">
+                            </div>
+                            <div class="mb-3">
+                                <input type="number" class="form-control" name="listed_price" id="listed_price" placeholder="Enter the listed price of the bool">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Check</button><br><br>
+                            {% if result %}
+                                <p>{{result}}</p>
+                            {% endif %}
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
